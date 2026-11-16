@@ -1,0 +1,136 @@
+<!-- Phone settings (Connect IQ app / Garmin Express), variant resources-settings-noclimb: without climbing.
+     There are two variants (climb, noclimb); keep both identical except the KindClimbH list entry, value 10.
+     monkey.jungle assigns them to the devices by resourcePath. They appear only for store and beta installs,
+     not for a sideloaded .prg. Same entries and order as the on-device menu (source/settings/SettingsMenu.mc);
+     the list values are the ColorChoice and DataKind values. -->
+<settings>
+    <setting propertyKey="@Properties.DarkBackground" title="@Strings.DarkBackgroundTitle">
+        <settingConfig type="boolean" />
+    </setting>
+    <setting propertyKey="@Properties.Color1" title="@Strings.Color1Title">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.ColorRed</listEntry>
+            <listEntry value="1">@Strings.ColorOrange</listEntry>
+            <listEntry value="2">@Strings.ColorYellow</listEntry>
+            <listEntry value="3">@Strings.ColorGreen</listEntry>
+            <listEntry value="4">@Strings.ColorTeal</listEntry>
+            <listEntry value="5">@Strings.ColorBlue</listEntry>
+            <listEntry value="6">@Strings.ColorPurple</listEntry>
+            <listEntry value="7">@Strings.ColorPink</listEntry>
+        </settingConfig>
+    </setting>
+    <setting propertyKey="@Properties.Color2" title="@Strings.Color2Title">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.ColorRed</listEntry>
+            <listEntry value="1">@Strings.ColorOrange</listEntry>
+            <listEntry value="2">@Strings.ColorYellow</listEntry>
+            <listEntry value="3">@Strings.ColorGreen</listEntry>
+            <listEntry value="4">@Strings.ColorTeal</listEntry>
+            <listEntry value="5">@Strings.ColorBlue</listEntry>
+            <listEntry value="6">@Strings.ColorPurple</listEntry>
+            <listEntry value="7">@Strings.ColorPink</listEntry>
+        </settingConfig>
+    </setting>
+    <setting propertyKey="@Properties.Slot1" title="@Strings.SlotTopTitle">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.KindNone</listEntry>
+            <listEntry value="1">@Strings.KindWeather</listEntry>
+            <listEntry value="2">@Strings.KindBodyBattery</listEntry>
+            <listEntry value="3">@Strings.KindHeartRate</listEntry>
+            <listEntry value="4">@Strings.KindActiveCal</listEntry>
+            <listEntry value="5">@Strings.KindCalories</listEntry>
+            <listEntry value="6">@Strings.KindSteps</listEntry>
+            <listEntry value="7">@Strings.KindRunKm</listEntry>
+            <listEntry value="8">@Strings.KindBikeKm</listEntry>
+            <listEntry value="9">@Strings.KindSwimM</listEntry>
+            <listEntry value="11">@Strings.KindTrainingH</listEntry>
+            <listEntry value="12">@Strings.KindVo2max</listEntry>
+            <listEntry value="13">@Strings.KindDate</listEntry>
+        </settingConfig>
+    </setting>
+    <setting propertyKey="@Properties.Slot2" title="@Strings.SlotUpperLeftTitle">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.KindNone</listEntry>
+            <listEntry value="1">@Strings.KindWeather</listEntry>
+            <listEntry value="2">@Strings.KindBodyBattery</listEntry>
+            <listEntry value="3">@Strings.KindHeartRate</listEntry>
+            <listEntry value="4">@Strings.KindActiveCal</listEntry>
+            <listEntry value="5">@Strings.KindCalories</listEntry>
+            <listEntry value="6">@Strings.KindSteps</listEntry>
+            <listEntry value="7">@Strings.KindRunKm</listEntry>
+            <listEntry value="8">@Strings.KindBikeKm</listEntry>
+            <listEntry value="9">@Strings.KindSwimM</listEntry>
+            <listEntry value="11">@Strings.KindTrainingH</listEntry>
+            <listEntry value="12">@Strings.KindVo2max</listEntry>
+            <listEntry value="13">@Strings.KindDate</listEntry>
+        </settingConfig>
+    </setting>
+    <setting propertyKey="@Properties.Slot3" title="@Strings.SlotUpperRightTitle">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.KindNone</listEntry>
+            <listEntry value="1">@Strings.KindWeather</listEntry>
+            <listEntry value="2">@Strings.KindBodyBattery</listEntry>
+            <listEntry value="3">@Strings.KindHeartRate</listEntry>
+            <listEntry value="4">@Strings.KindActiveCal</listEntry>
+            <listEntry value="5">@Strings.KindCalories</listEntry>
+            <listEntry value="6">@Strings.KindSteps</listEntry>
+            <listEntry value="7">@Strings.KindRunKm</listEntry>
+            <listEntry value="8">@Strings.KindBikeKm</listEntry>
+            <listEntry value="9">@Strings.KindSwimM</listEntry>
+            <listEntry value="11">@Strings.KindTrainingH</listEntry>
+            <listEntry value="12">@Strings.KindVo2max</listEntry>
+            <listEntry value="13">@Strings.KindDate</listEntry>
+        </settingConfig>
+    </setting>
+    <setting propertyKey="@Properties.Slot4" title="@Strings.SlotLowerLeftTitle">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.KindNone</listEntry>
+            <listEntry value="1">@Strings.KindWeather</listEntry>
+            <listEntry value="2">@Strings.KindBodyBattery</listEntry>
+            <listEntry value="3">@Strings.KindHeartRate</listEntry>
+            <listEntry value="4">@Strings.KindActiveCal</listEntry>
+            <listEntry value="5">@Strings.KindCalories</listEntry>
+            <listEntry value="6">@Strings.KindSteps</listEntry>
+            <listEntry value="7">@Strings.KindRunKm</listEntry>
+            <listEntry value="8">@Strings.KindBikeKm</listEntry>
+            <listEntry value="9">@Strings.KindSwimM</listEntry>
+            <listEntry value="11">@Strings.KindTrainingH</listEntry>
+            <listEntry value="12">@Strings.KindVo2max</listEntry>
+            <listEntry value="13">@Strings.KindDate</listEntry>
+        </settingConfig>
+    </setting>
+    <setting propertyKey="@Properties.Slot5" title="@Strings.SlotLowerRightTitle">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.KindNone</listEntry>
+            <listEntry value="1">@Strings.KindWeather</listEntry>
+            <listEntry value="2">@Strings.KindBodyBattery</listEntry>
+            <listEntry value="3">@Strings.KindHeartRate</listEntry>
+            <listEntry value="4">@Strings.KindActiveCal</listEntry>
+            <listEntry value="5">@Strings.KindCalories</listEntry>
+            <listEntry value="6">@Strings.KindSteps</listEntry>
+            <listEntry value="7">@Strings.KindRunKm</listEntry>
+            <listEntry value="8">@Strings.KindBikeKm</listEntry>
+            <listEntry value="9">@Strings.KindSwimM</listEntry>
+            <listEntry value="11">@Strings.KindTrainingH</listEntry>
+            <listEntry value="12">@Strings.KindVo2max</listEntry>
+            <listEntry value="13">@Strings.KindDate</listEntry>
+        </settingConfig>
+    </setting>
+    <setting propertyKey="@Properties.Slot6" title="@Strings.SlotBottomTitle">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.KindNone</listEntry>
+            <listEntry value="1">@Strings.KindWeather</listEntry>
+            <listEntry value="2">@Strings.KindBodyBattery</listEntry>
+            <listEntry value="3">@Strings.KindHeartRate</listEntry>
+            <listEntry value="4">@Strings.KindActiveCal</listEntry>
+            <listEntry value="5">@Strings.KindCalories</listEntry>
+            <listEntry value="6">@Strings.KindSteps</listEntry>
+            <listEntry value="7">@Strings.KindRunKm</listEntry>
+            <listEntry value="8">@Strings.KindBikeKm</listEntry>
+            <listEntry value="9">@Strings.KindSwimM</listEntry>
+            <listEntry value="11">@Strings.KindTrainingH</listEntry>
+            <listEntry value="12">@Strings.KindVo2max</listEntry>
+            <listEntry value="13">@Strings.KindDate</listEntry>
+        </settingConfig>
+    </setting>
+</settings>

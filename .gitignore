@@ -1,0 +1,10 @@
+bin/
+*.der
+*.pem
+.DS_Store
+.claude/
+.vscode/
+.agents/
+*.prg
+*.iq
+design/drafts/captures/

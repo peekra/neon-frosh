@@ -1,0 +1,104 @@
+project.manifest = manifest.xml
+
+# Unit tests live in tests/. Everything there must carry the (:test) annotation,
+# so it is only compiled into builds made with -t (--unit-test).
+base.sourcePath = source;tests
+
+# Display type and climbing, selected at compile time. Exactly one annotation of each pair stays in a build:
+#   (:mip) / (:amoled)     display technology (DisplayType.IS_MIP)
+#   (:climb) / (:noclimb)  the watch can record climbing (DeviceSports.HAS_CLIMBING)
+# A device line replaces the base value, so every line names both pairs.
+base.excludeAnnotations = mip;noclimb
+fenix7.excludeAnnotations = amoled;noclimb
+fenix7s.excludeAnnotations = amoled;noclimb
+fenix7x.excludeAnnotations = amoled;noclimb
+fenix7pro.excludeAnnotations = amoled;noclimb
+fenix7spro.excludeAnnotations = amoled;noclimb
+fenix7xpro.excludeAnnotations = amoled;noclimb
+fenix7pronowifi.excludeAnnotations = amoled;noclimb
+fenix7xpronowifi.excludeAnnotations = amoled;noclimb
+fenix8solar47mm.excludeAnnotations = amoled;noclimb
+fenix8solar51mm.excludeAnnotations = amoled;noclimb
+fenix9prosolar47mm.excludeAnnotations = amoled;noclimb
+fenix9prosolar51mm.excludeAnnotations = amoled;noclimb
+fr255.excludeAnnotations = amoled;noclimb
+fr255m.excludeAnnotations = amoled;noclimb
+fr255s.excludeAnnotations = amoled;noclimb
+fr255sm.excludeAnnotations = amoled;noclimb
+fr955.excludeAnnotations = amoled;noclimb
+enduro3.excludeAnnotations = amoled;noclimb
+enduro4.excludeAnnotations = amoled;noclimb
+vivoactive5.excludeAnnotations = mip;climb
+instinct3amoled45mm.excludeAnnotations = mip;noclimb
+instinct3amoled50mm.excludeAnnotations = mip;noclimb
+fr165.excludeAnnotations = mip;climb
+fr165m.excludeAnnotations = mip;climb
+fr170.excludeAnnotations = mip;climb
+fr170m.excludeAnnotations = mip;climb
+fr70.excludeAnnotations = mip;climb
+vivoactive6.excludeAnnotations = mip;climb
+
+# Phone settings (Connect IQ app / Garmin Express), one of two variants per device:
+#   resources-settings-climb    with the list entry "Climbing h/week"
+#   resources-settings-noclimb  without it (the devices that exclude "climb" above)
+# Every device appends its variant to its own default resource path, so the resolution folders
+# (resources-round-<W>x<H>) stay in.
+fr165.resourcePath = $(fr165.resourcePath);resources-settings-noclimb
+fr165m.resourcePath = $(fr165m.resourcePath);resources-settings-noclimb
+fr265.resourcePath = $(fr265.resourcePath);resources-settings-climb
+fr265s.resourcePath = $(fr265s.resourcePath);resources-settings-climb
+fr965.resourcePath = $(fr965.resourcePath);resources-settings-climb
+fr970.resourcePath = $(fr970.resourcePath);resources-settings-climb
+venu3.resourcePath = $(venu3.resourcePath);resources-settings-climb
+venu3s.resourcePath = $(venu3s.resourcePath);resources-settings-climb
+vivoactive5.resourcePath = $(vivoactive5.resourcePath);resources-settings-noclimb
+vivoactive6.resourcePath = $(vivoactive6.resourcePath);resources-settings-noclimb
+fenix843mm.resourcePath = $(fenix843mm.resourcePath);resources-settings-climb
+fenix847mm.resourcePath = $(fenix847mm.resourcePath);resources-settings-climb
+fenix8pro47mm.resourcePath = $(fenix8pro47mm.resourcePath);resources-settings-climb
+fenix943mm.resourcePath = $(fenix943mm.resourcePath);resources-settings-climb
+fenix947mm.resourcePath = $(fenix947mm.resourcePath);resources-settings-climb
+fenix9pro43mm.resourcePath = $(fenix9pro43mm.resourcePath);resources-settings-climb
+fenix9pro47mm.resourcePath = $(fenix9pro47mm.resourcePath);resources-settings-climb
+fenix9pro51mm.resourcePath = $(fenix9pro51mm.resourcePath);resources-settings-climb
+fenixe.resourcePath = $(fenixe.resourcePath);resources-settings-climb
+epix2.resourcePath = $(epix2.resourcePath);resources-settings-climb
+epix2pro42mm.resourcePath = $(epix2pro42mm.resourcePath);resources-settings-climb
+epix2pro47mm.resourcePath = $(epix2pro47mm.resourcePath);resources-settings-climb
+epix2pro51mm.resourcePath = $(epix2pro51mm.resourcePath);resources-settings-climb
+d2mach1.resourcePath = $(d2mach1.resourcePath);resources-settings-climb
+d2mach2.resourcePath = $(d2mach2.resourcePath);resources-settings-climb
+d2mach2pro.resourcePath = $(d2mach2pro.resourcePath);resources-settings-climb
+marq2.resourcePath = $(marq2.resourcePath);resources-settings-climb
+marq2aviator.resourcePath = $(marq2aviator.resourcePath);resources-settings-climb
+marq3.resourcePath = $(marq3.resourcePath);resources-settings-climb
+venu441mm.resourcePath = $(venu441mm.resourcePath);resources-settings-climb
+venu445mm.resourcePath = $(venu445mm.resourcePath);resources-settings-climb
+fr57042mm.resourcePath = $(fr57042mm.resourcePath);resources-settings-climb
+fr57047mm.resourcePath = $(fr57047mm.resourcePath);resources-settings-climb
+fr170.resourcePath = $(fr170.resourcePath);resources-settings-noclimb
+fr170m.resourcePath = $(fr170m.resourcePath);resources-settings-noclimb
+fr70.resourcePath = $(fr70.resourcePath);resources-settings-noclimb
+instinct3amoled45mm.resourcePath = $(instinct3amoled45mm.resourcePath);resources-settings-climb
+instinct3amoled50mm.resourcePath = $(instinct3amoled50mm.resourcePath);resources-settings-climb
+approachs7243mm.resourcePath = $(approachs7243mm.resourcePath);resources-settings-climb
+approachs7247mm.resourcePath = $(approachs7247mm.resourcePath);resources-settings-climb
+fenix7.resourcePath = $(fenix7.resourcePath);resources-settings-climb
+fenix7s.resourcePath = $(fenix7s.resourcePath);resources-settings-climb
+fenix7x.resourcePath = $(fenix7x.resourcePath);resources-settings-climb
+fenix7pro.resourcePath = $(fenix7pro.resourcePath);resources-settings-climb
+fenix7spro.resourcePath = $(fenix7spro.resourcePath);resources-settings-climb
+fenix7xpro.resourcePath = $(fenix7xpro.resourcePath);resources-settings-climb
+fenix7pronowifi.resourcePath = $(fenix7pronowifi.resourcePath);resources-settings-climb
+fenix7xpronowifi.resourcePath = $(fenix7xpronowifi.resourcePath);resources-settings-climb
+fenix8solar47mm.resourcePath = $(fenix8solar47mm.resourcePath);resources-settings-climb
+fenix8solar51mm.resourcePath = $(fenix8solar51mm.resourcePath);resources-settings-climb
+fenix9prosolar47mm.resourcePath = $(fenix9prosolar47mm.resourcePath);resources-settings-climb
+fenix9prosolar51mm.resourcePath = $(fenix9prosolar51mm.resourcePath);resources-settings-climb
+fr255.resourcePath = $(fr255.resourcePath);resources-settings-climb
+fr255m.resourcePath = $(fr255m.resourcePath);resources-settings-climb
+fr255s.resourcePath = $(fr255s.resourcePath);resources-settings-climb
+fr255sm.resourcePath = $(fr255sm.resourcePath);resources-settings-climb
+fr955.resourcePath = $(fr955.resourcePath);resources-settings-climb
+enduro3.resourcePath = $(enduro3.resourcePath);resources-settings-climb
+enduro4.resourcePath = $(enduro4.resourcePath);resources-settings-climb

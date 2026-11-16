@@ -1,0 +1,19 @@
+<properties>
+    <!-- Ids must match SettingsStore. Stored values are permanent: never renumber or rename them. -->
+    <property id="DarkBackground" type="boolean">true</property>
+    <!-- ColorChoice: 0 red, 1 orange, 2 yellow, 3 green, 4 teal, 5 blue, 6 purple, 7 pink.
+         Colour 1 (hours, progress arcs) default 0; colour 2 (minute outline, colon, panels) default 4. -->
+    <property id="Color1" type="number">0</property>
+    <property id="Color2" type="number">4</property>
+    <!-- Data kind per slot (DataKind.mc): 0 off, 1 weather, 2 body battery, 3 heart rate, 4 active calories,
+         5 total calories, 6 steps, 7 run km, 8 bike km, 9 swim m, 10 climbing h, 11 training h, 12 VO2 max,
+         13 date.
+         Slot1 top panel, Slot2 upper left, Slot3 upper right, Slot4 lower left, Slot5 lower right,
+         Slot6 bottom panel. Defaults = DataKind.DEFAULT_SLOTS. -->
+    <property id="Slot1" type="number">13</property>
+    <property id="Slot2" type="number">1</property>
+    <property id="Slot3" type="number">2</property>
+    <property id="Slot4" type="number">3</property>
+    <property id="Slot5" type="number">4</property>
+    <property id="Slot6" type="number">6</property>
+</properties>

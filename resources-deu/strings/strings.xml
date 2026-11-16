@@ -1,0 +1,41 @@
+<strings>
+    <string id="AppName">Neon Frosh</string>
+    <string id="DarkBackgroundTitle">Dunkler Hintergrund</string>
+    <string id="Color1Title">Farbe 1</string>
+    <string id="Color2Title">Farbe 2</string>
+    <string id="ColorRed">Rot</string>
+    <string id="ColorOrange">Orange</string>
+    <string id="ColorYellow">Gelb</string>
+    <string id="ColorGreen">Grün</string>
+    <string id="ColorTeal">Petrol</string>
+    <string id="ColorBlue">Blau</string>
+    <string id="ColorPurple">Violett</string>
+    <string id="ColorPink">Pink</string>
+
+    <!-- Date line: $1$ month, $2$ day (month name from the system, upper case). -->
+    <string id="DateFormat">$2$. $1$</string>
+
+    <!-- Titles of the six slots (on-device menu and phone settings). -->
+    <string id="SlotTopTitle">Oberes Feld</string>
+    <string id="SlotUpperLeftTitle">Oben links</string>
+    <string id="SlotUpperRightTitle">Oben rechts</string>
+    <string id="SlotLowerLeftTitle">Unten links</string>
+    <string id="SlotLowerRightTitle">Unten rechts</string>
+    <string id="SlotBottomTitle">Unteres Feld</string>
+
+    <!-- Names of the data kinds (DataKind.mc). -->
+    <string id="KindNone">Aus</string>
+    <string id="KindWeather">Wetter</string>
+    <string id="KindBodyBattery">Body Battery</string>
+    <string id="KindHeartRate">Puls</string>
+    <string id="KindActiveCal">Aktive Kalorien</string>
+    <string id="KindCalories">Kalorien gesamt</string>
+    <string id="KindSteps">Schritte</string>
+    <string id="KindRunKm">Lauf-km/Woche</string>
+    <string id="KindBikeKm">Rad-km/Woche</string>
+    <string id="KindSwimM">Schwimm-m/Woche</string>
+    <string id="KindClimbH">Klettern h/Woche</string>
+    <string id="KindTrainingH">Training h/Woche</string>
+    <string id="KindVo2max">VO2max</string>
+    <string id="KindDate">Datum</string>
+</strings>

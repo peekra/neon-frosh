@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 74 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- BLUETOOTH SYMBOL -->
+  <path d="M7 17l10-10-5-5v20l5-5-10-10" />
+
+  <!-- ABSTAND -->
+  
+  <!-- AKKU SYMBOL -->
+  <!-- Gehäuse -->
+  <rect x="35" y="4" width="30" height="16" rx="2" />
+  <!-- Kontakt/Nippel -->
+  <path d="M65 9v6" stroke-width="3" />
+  <!-- Ladestatus (3 Balken) -->
+  <line x1="40" y1="8" x2="40" y2="16" stroke-width="3" />
+  <line x1="47" y1="8" x2="47" y2="16" stroke-width="3" />
+  <line x1="54" y1="8" x2="54" y2="16" stroke-width="3" />
+</svg>
